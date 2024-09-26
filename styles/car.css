@@ -1,1 +1,62 @@
+/* General styles for the simulation */
+#carCanvas {
+    display: block;
+    margin: 20px auto;
+    background: #2e2e2e; /* Dark background for the road */
+    border: 1px solid #000;
+}
 
+/* Car styles */
+.car {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    background-color: #007bff; /* Primary color for the main car */
+    border: 2px solid #004085; /* Slightly darker border for better visibility */
+    border-radius: 5px;
+    transform-origin: center center;
+}
+
+/* Traffic vehicle styles */
+.traffic {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    background-color: #dc3545; /* Red color for traffic cars */
+    border: 2px solid #b21f2d;
+    border-radius: 5px;
+    transform-origin: center center;
+}
+
+/* Sensor visual styles */
+.sensor {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #ffc107; /* Yellow color for sensor points */
+    border-radius: 50%;
+}
+
+/* Road line styles */
+.road-line {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+/* Style for collision effect */
+.collision {
+    background-color: #ff0000 !important; /* Red color for collision indication */
+    border-color: #990000 !important;
+    opacity: 0.8;
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 768px) {
+    #carCanvas {
+        width: 90vw;
+        height: 60vh;
+    }
+}
