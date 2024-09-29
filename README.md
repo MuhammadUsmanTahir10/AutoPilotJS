@@ -32,21 +32,30 @@ The Car.js file is the core of the project, defining how the car operates. Here�
 
 # Class Car
 Constructor: Initializes the car with parameters like position, dimensions, control type, and maximum speed.
+
 Initialization: Sets up speed, acceleration, and the car’s orientation. The car can be controlled by AI, a human, or act as a dummy.
+
 Sensor and Neural Network Setup: Equips the car with a sensor for environment perception and a neural network for decision-making.
+
 Controls: Handles different control types (keyboard, AI, dummy).
+
 Update Method: Moves the car, updates its shape, and checks for collisions. Processes sensor data through the neural network for decision-making.
+
 Assess Damage: Checks for collisions with road borders or traffic.
+
 Create Polygon: Calculates the car’s position and shape.
+
 Move Method: Manages the car’s movement based on input controls, speed, and friction.
+
 Draw Method: Visualizes the car on the canvas, including the sensors if enabled.
-Learning and Adaptation
-The car learns continuously, capturing data each time it runs. Over time, it crashes less frequently as it learns from each attempt, just like real-world self-driving cars. The concept of Fleet Learning is incorporated, allowing the car to share data and insights with other simulated vehicles, creating a smarter, more adaptive system.
+
+Learning and Adaptation: The car learns continuously, capturing data each time it runs. Over time, it crashes less frequently as it learns from each attempt, just like real-world self-driving cars. The concept of Fleet Learning is incorporated, allowing the car to share data and insights with other simulated vehicles, creating a smarter, more adaptive system.
 
 # Getting Started
 To explore the code in detail, follow these steps:
 
 Clone the repository:
+
 git clone [your-repo-url]
 
 Open the project in your preferred code editor.
@@ -59,3 +68,5 @@ Expand the simulation to include more complex driving scenarios and road conditi
 
 # Contributing
 Contributions are welcome! If you have ideas for enhancing the simulation or improving the AI algorithms, feel free to submit a pull request or open an issue.
+
+# Credit: https://medium.com/@krish.bhoopati556/coding-the-road-ahead-self-driving-cars-with-javascript-and-ai-1995ecb2c1ec
